@@ -76,9 +76,6 @@ header .container > a {
 header .container > a img {
     width: 100%
 }
-nav {
-    position: relative;
-}
 header nav .icon {
     width: 40px;
     display: flex;
@@ -113,16 +110,16 @@ header nav .icon:active {
 }
 nav .navbar {
     background-color: var(--secondary-color, #2c4856);
-    border-radius: 10px;
     position: absolute;
-    right: 0;
-    top: calc(100% + 1px);
-    width: 270px;
+    top: 100%;
     padding: 20px;
-    padding-bottom: 60px;
+    height: calc(100vh - 100%);
+    width: 290px;
     display: none;
+    transition: 0.3s;
 }
 header nav:hover .navbar {
+    right: 0.1px;
     display: block;
 }
 .navbar li {
@@ -138,18 +135,18 @@ header nav:hover .navbar {
     color: #fff;
     font-size: 1.2rem;
     transition: color 0.5s linear, transform var(--main-transition);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 .navbar li:hover a,
-.navbar li:active a {
+.navbar li a.active {
     color: #00f3da;
     transform: translate3d(0, 0, 35px);
 }
 .navbar li span {
     display: block;
     color: #9c9595;
-    margin: 30px 0 5px;
+    margin: 40px 0 10px;
 }
 .navbar span.first-span {
     margin-top: 0px;
@@ -727,6 +724,12 @@ footer p a:hover {
         margin-top: -30px;
     }
     /* End Components */
+
+    /* Start Header */
+    nav .navbar {
+        width: 350px;
+    }
+    /* End Header */
 
     /* Start Landing Section */
     #landing-sec .container div {
