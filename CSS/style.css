@@ -111,9 +111,10 @@ header nav .icon:active {
 nav .navbar {
     background-color: var(--secondary-color, #2c4856);
     position: absolute;
-    top: 100%;
+    top: 0;
     padding: 20px;
-    height: calc(100vh - 100%);
+    height: 100%;
+    height: calc(100vh);
     width: 290px;
     display: none;
     /* transition: 0.3s; */
