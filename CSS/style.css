@@ -57,6 +57,9 @@ body {
 }
 
 /* Start Header */
+body {
+    overflow: hidden;
+}
 header {
     width: 100%;
     position: sticky;
@@ -113,15 +116,13 @@ nav .navbar {
     position: absolute;
     top: 100%;
     padding: 20px;
-    height: 100%;
     height: calc(100vh - 100%);
     width: 290px;
-    display: none;
-    /* transition: 0.3s; */
+    right: -100%;
+    transition: 0.4s;
 }
 header nav:hover .navbar {
     right: 0.1px;
-    display: block;
 }
 .navbar li {
     display: block;
