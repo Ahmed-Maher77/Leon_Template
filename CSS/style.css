@@ -170,7 +170,7 @@ header nav:hover .navbar {
 }
 #landing-sec .container {
     height: calc(100vh - 48.39px);
-	height: calc(700px - 48.39px);
+	min-height: calc(700px - 48.39px);
     position: relative;
 }
 #landing-sec .container div {
