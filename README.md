@@ -3,4 +3,4 @@
 # Leon Template
 Leon Template is a Super Creative Agency Web Template
 ##### Used Technologies: HTML/HTML5 - CSS/CSS3 - Responsive Design - JavaScript - Git
-##### Demo: https://leon-template-kappa.vercel.app/
+##### Demo (Live): https://leon-template-kappa.vercel.app/
