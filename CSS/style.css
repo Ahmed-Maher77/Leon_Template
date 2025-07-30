@@ -63,6 +63,9 @@ header {
     top: 0;
     z-index: 999;
     background-color: #ffffffaa;
+    &.scrolled {
+        background-color: #ffffffa3;
+    }
 }
 header .container {
     display: flex;
@@ -110,18 +113,27 @@ header nav .icon:active {
 }
 nav .navbar {
     background-color: var(--secondary-color, #2c4856);
-    position: absolute;
-    top: 100%;
-    padding: 20px;
-    height: calc(100vh - 100%);
+    position: fixed;
+    top: 0;
+    padding: 60px 20px 20px 20px;
+    height: 100vh;
     width: 290px;
     right: -100%;
     transition: 0.4s;
-    display: none;
-}
-header nav:hover .navbar {
-    right: 0.1px;
-    display: block;
+    /* display: none; */
+    .fa-xmark {
+        position: absolute !important;
+        top: 12px !important;
+        right: 15px !important;
+        font-size: 1.7rem !important;
+        left: auto !important;
+        color: #fff !important;
+        cursor: pointer !important;
+        padding: 5px;
+    }
+    &.active {
+        right: 0.1px;
+    }
 }
 .navbar li {
     display: block;
@@ -156,8 +168,8 @@ header nav:hover .navbar {
     color: #9c9595;
     position: absolute;
     left: 20px;
-    bottom: 60px;
-    font-size: 0.8rem;
+    bottom: 20px;
+    font-size: 0.95rem;
 }
 /* End Header */
 
@@ -315,6 +327,15 @@ header nav:hover .navbar {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     background-color: var(--section-background);
+    .no-more-msg {
+        text-align: center;
+        margin-top: -8px;
+        color: #f00;
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
 }
 #portfolio-sec .container .portfolios-container {
     display: grid;
@@ -500,7 +521,6 @@ footer {
 footer p {
     margin-bottom: 10px;
 }
-footer p span,
 footer p a {
     color: var(--main-color);
     font-weight: bold;
