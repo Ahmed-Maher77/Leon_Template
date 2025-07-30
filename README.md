@@ -65,9 +65,8 @@ cd Leon_Template
 
 3. **Run the project:**
 
-```bash
 open ```index.html``` in your browser
-```
+
 > No dependencies or build tools are required—just open the file directly!
 
 ---

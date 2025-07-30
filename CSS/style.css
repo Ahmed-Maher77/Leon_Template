@@ -64,7 +64,8 @@ header {
     z-index: 999;
     background-color: #ffffffaa;
     &.scrolled {
-        background-color: #ffffffa3;
+        background-color: #ffffff;
+        box-shadow: 0 2px 6px #00000017;
     }
 }
 header .container {
