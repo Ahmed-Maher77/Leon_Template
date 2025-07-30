@@ -44,7 +44,7 @@ Leon Template is a modern, responsive personal portfolio website designed to pro
 ## 👀 Website Preview
 
 <a href="https://leon-template-kappa.vercel.app/" title="demo">
-  <img src="uploaded-img-on-github-readme" alt="website preview" width="400">
+  <img src="https://github.com/user-attachments/assets/e185dd7b-a7f0-4fea-9d4d-7694e558218b" alt="website preview - UI Mockup" width="400">
 </a>
 
 ---
@@ -65,7 +65,7 @@ cd Leon_Template
 
 3. **Run the project:**
 
-open ```index.html``` in your browser
+  open ```index.html``` in your browser
 
 > No dependencies or build tools are required—just open the file directly!
 
